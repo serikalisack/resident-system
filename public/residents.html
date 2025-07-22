@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manage Residents</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Residents Management</h2>
+
+    <button id="showAddFormBtn">Add New Resident</button>
+
+    <!-- Add/Edit Form (hidden by default) -->
+    <form id="residentForm" style="display:none;">
+      <input type="hidden" id="residentId" />
+      <input type="text" id="first_name" placeholder="First Name" required />
+      <input type="text" id="last_name" placeholder="Last Name" required />
+      <input type="text" id="national_id" placeholder="National ID" required />
+      <input type="date" id="date_of_birth" placeholder="Date of Birth" required />
+      <input type="text" id="gender" placeholder="Gender" required />
+      <input type="text" id="phone" placeholder="Phone" />
+      <input type="email" id="email" placeholder="Email" />
+      <input type="text" id="address" placeholder="Address" />
+      <input type="text" id="location" placeholder="Location" />
+      <input type="text" id="employment_status" placeholder="Employment Status" />
+      <input type="text" id="property_ownership_details" placeholder="Property Ownership Details" />
+      <input type="text" id="household_id" placeholder="Household ID" required />
+      <button type="submit">Save Resident</button>
+      <button type="button" id="cancelBtn">Cancel</button>
+    </form>
+
+    <table id="residentsTable" border="1" cellpadding="8" cellspacing="0" style="margin-top: 20px; width: 100%;">
+      <thead>
+        <tr>
+          <th>ID</th><th>First Name</th><th>Last Name</th><th>National ID</th><th>DOB</th><th>Gender</th><th>Phone</th><th>Email</th><th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <nav>
+      <a href="dashboard.html">Back to Dashboard</a>
+    </nav>
+  </div>
+
+  <script src="js/residents.js"></script>
+</body>
+</html>

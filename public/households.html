@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manage Households</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Households Management</h2>
+
+    <button id="showAddFormBtn">Add New Household</button>
+
+    <!-- Add/Edit Form (hidden by default) -->
+    <form id="householdForm" style="display:none;">
+      <input type="hidden" id="householdId" />
+      <input type="text" id="household_name" placeholder="Household Name" required />
+      <input type="text" id="address" placeholder="Address" />
+      <input type="text" id="location" placeholder="Location" />
+      <input type="number" id="size" placeholder="Size (number of members)" min="1" />
+      <input type="text" id="composition" placeholder="Composition (e.g. 2 adults, 3 children)" />
+      <input type="text" id="property_ownership_details" placeholder="Property Ownership Details" />
+      <button type="submit">Save Household</button>
+      <button type="button" id="cancelBtn">Cancel</button>
+    </form>
+
+    <table id="householdsTable" border="1" cellpadding="8" cellspacing="0" style="margin-top: 20px; width: 100%;">
+      <thead>
+        <tr>
+          <th>ID</th><th>Name</th><th>Address</th><th>Location</th><th>Size</th><th>Composition</th><th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <nav>
+      <a href="dashboard.html">Back to Dashboard</a>
+    </nav>
+  </div>
+
+  <script src="js/households.js"></script>
+</body>
+</html>

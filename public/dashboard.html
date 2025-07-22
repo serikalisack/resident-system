@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard - Resident System</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Dashboard</h2>
+    <p>Welcome, <span id="username"></span> (<span id="role"></span>)</p>
+
+    <div class="stats">
+      <div>Total Users: <span id="totalUsers">...</span></div>
+      <div>Total Residents: <span id="totalResidents">...</span></div>
+      <div>Total Households: <span id="totalHouseholds">...</span></div>
+    </div>
+
+    <nav>
+      <a href="residents.html">Manage Residents</a> |
+      <a href="households.html">Manage Households</a> |
+      <a href="#" id="logoutBtn">Logout</a>
+    </nav>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
